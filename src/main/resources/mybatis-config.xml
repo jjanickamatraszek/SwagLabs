@@ -18,7 +18,8 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="db/mapper/user-mapper.xml"/>
-        <mapper resource="db/mapper/car-mapper.xml"/>
+        <mapper resource="mappers/user-mapper.xml"/>
+        <mapper resource="mappers/order-mapper.xml"/>
+        <mapper resource="mappers/product-mapper.xml"/>
     </mappers>
 </configuration>

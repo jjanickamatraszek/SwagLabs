@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
+<mapper namespace="com.solvd.dao.interfaces.ProductDao">
+
+    <sql id="body">
+        p.id as product_id,
+        p.name as product_name,
+        p.price as product_price,
+        p.web_id as product_page_id
+    </sql>
+
+    <resultMap id="productResultMap" type="com.solvd.model.Product" autoMapping="false">
+        <id column="product_id" property="id"/>
+        <result column="product_name" property="name"/>
+        <result column="product_price" property="price"/>
+        <result column="product_page_id" property="webId"/>
+    </resultMap>
+
+</mapper>
