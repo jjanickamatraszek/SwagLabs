@@ -11,7 +11,9 @@ import java.util.List;
 @ToString
 public class User {
     private int id;
-    private String name;
+    private String firstName;
+    private String lastName;
+    private String zipCode;
     private String login;
     private String password;
     private List<Order> orders;

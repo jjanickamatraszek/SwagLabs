@@ -6,7 +6,9 @@
     <select id="getById" resultMap="userResultMap">
         SELECT
         u.id as user_id,
-        u.name as user_name,
+        u.first_name as user_first_name,
+        u.last_name as user_last_name,
+        u.zip_code as user_zip_code,
         u.login as user_login,
         u.password as user_password,
         <include refid="com.solvd.dao.interfaces.OrderDao.body"/>,
@@ -23,7 +25,9 @@
 
     <resultMap id="userResultMap" type="com.solvd.model.User" autoMapping="false">
         <id column="user_id" property="id"/>
-        <result column="user_name" property="name"/>
+        <result column="user_first_name" property="firstName"/>
+        <result column="user_last_name" property="lastName"/>
+        <result column="user_zip_code" property="zipCode"/>
         <result column="user_login" property="login"/>
         <result column="user_password" property="password"/>
         <collection property="orders" resultMap="com.solvd.dao.interfaces.OrderDao.orderResultMap"/>
