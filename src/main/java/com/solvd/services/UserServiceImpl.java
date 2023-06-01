@@ -6,7 +6,7 @@ import com.solvd.utils.MyBatisDaoFactory;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements IUserService {
     private static final SqlSessionFactory SESSION_FACTORY = MyBatisDaoFactory.getSqlSessionFactory();
 
     @Override

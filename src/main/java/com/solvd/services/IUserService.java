@@ -2,6 +2,6 @@ package com.solvd.services;
 
 import com.solvd.model.User;
 
-public interface UserService {
+public interface IUserService {
     User getById(int id);
 }

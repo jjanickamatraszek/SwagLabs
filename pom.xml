@@ -40,11 +40,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.qaprosoft</groupId>
-            <artifactId>carina-core</artifactId>
-            <version>${carina-core.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>${log4j-slf4j2-impl.version}</version>
